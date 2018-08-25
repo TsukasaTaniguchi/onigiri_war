@@ -1,3 +1,6 @@
+# チーム名
+生産技術本部新入社員チーム
+
 # onigiri_war
 OneNightROBOCON競技「onigiri war」プロジェクト
 

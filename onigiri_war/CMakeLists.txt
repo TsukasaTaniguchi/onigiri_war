@@ -11,6 +11,15 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   rospy
   std_msgs
+  std_msgs
+  sensor_msgs
+  cv_bridge
+  image_transport
+  actionlib
+  move_base_msgs
+  geometry_msgs
+  control_msgs
+
 )
 
 ## System dependencies are found with CMake's conventions
@@ -197,3 +206,6 @@ include_directories(
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
+add_executable(onigiri_war src/wp_navigation.cpp)
+target_link_libraries(onigiri_war ${catkin_LIBRARIES})
+target_link_libraries(onigiri_war ${catkin_LIBRARIES} /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_highgui3.so)

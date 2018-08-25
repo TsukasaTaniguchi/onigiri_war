@@ -6,13 +6,11 @@
 
 
     <!-- sample program  -->
+<!--
     <node pkg="onigiri_war" type="randomRun.py" name="randomRun" output="screen"/>
-
-
-
-
-
-
+-->
+	<!--include file="$(find onigiri_navigation)/launch/navigation.launch" /-->
+	<node pkg="onigiri_war" type="onigiri_war" name="onigiri_war" output="screen"/>
 
     <!-- End of your space  -->
 </launch>
